@@ -27,7 +27,7 @@ public class Billing {
     public Billing() {
     }
 
-    // Full constructor
+
     public Billing(int id, String billNo, int customerId, double totalAmount, List<BillItem> billItems, LocalDate createdAt, LocalDate updatedAt) {
         this.id = id;
         this.billNo = billNo;
