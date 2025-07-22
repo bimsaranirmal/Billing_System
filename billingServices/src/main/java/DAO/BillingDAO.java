@@ -1,5 +1,7 @@
-package Utils;
+package DAO;
 
+import Model.Billing;
+import Utils.DatabaseUtil;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;

@@ -1,4 +1,4 @@
-package Utils;
+package Model;
 
 import jakarta.json.bind.annotation.JsonbDateFormat;
 import java.time.LocalDate;

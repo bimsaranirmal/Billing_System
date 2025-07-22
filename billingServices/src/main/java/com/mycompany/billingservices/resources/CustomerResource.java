@@ -4,8 +4,8 @@
  */
 package com.mycompany.billingservices.resources;
 
-import Utils.Customer;
-import Utils.CustomerDAO;
+import Model.Customer;
+import DAO.CustomerDAO;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 import jakarta.ws.rs.Consumes;

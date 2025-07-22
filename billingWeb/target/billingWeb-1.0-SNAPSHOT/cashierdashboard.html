@@ -190,7 +190,7 @@
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link" href="cashierDashboard.html" target="mainFrame">
-                        <i class="fas fa-tachometer-alt"></i>Dashboard
+                        <i class="fas fa-tachometer-alt"></i>_dashboard
                     </a>
                 </li>
                 <li class="nav-item">
@@ -229,7 +229,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.html" target="mainFrame">
+                    <a class="nav-link" href="#" id="logoutLink">
                         <i class="fas fa-sign-out-alt"></i>Logout
                     </a>
                 </li>
@@ -282,6 +282,15 @@
                         link.classList.add('active');
                     }
                 });
+            });
+
+            // Handle logout confirmation
+            const logoutLink = document.getElementById('logoutLink');
+            logoutLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                if (confirm('Do you want to exit?')) {
+                    window.location.href = 'index.html'; // Navigate to index.html if confirmed
+                }
             });
         });
 

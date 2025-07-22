@@ -324,7 +324,7 @@
                                 <th>Email</th>
                                 <th>Phone</th>
                                 <th>Account Number</th>
-                                <th>Status</th>
+                     
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -618,19 +618,10 @@
                 <td>${customer.email}</td>
                 <td>${customer.phone || '-'}</td>
                 <td>${customer.accountNumber || '-'}</td>
-                <td>
-                    <span class="status-badge ${statusClass}">
-                        ${status}
-                    </span>
-                </td>
+
                 <td>
                     <div class="action-buttons d-flex gap-1">
-                        <button onclick="approveCustomer(${customer.id})" class="btn btn-success btn-sm" title="Approve">
-                            <i class="fas fa-check"></i>
-                        </button>
-                        <button onclick="rejectCustomer(${customer.id})" class="btn btn-warning btn-sm" title="Reject">
-                            <i class="fas fa-times"></i>
-                        </button>
+                        
                         <button onclick="openUpdateModal(${customer.id})" class="btn btn-primary btn-sm" title="Edit">
                             <i class="fas fa-edit"></i>
                         </button>
